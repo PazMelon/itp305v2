@@ -63,6 +63,6 @@ $users = $conn->query("SELECT id, username, first_name, last_name, role, created
 
 <!-- Include SweetAlert and our delete confirmation script -->
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-<script src="/assets/js/delete-confirm.js"></script>
+<script src="/assets/js/delete-confim.js"></script>
 
 <?php require_once 'includes/footer.php'; ?>
