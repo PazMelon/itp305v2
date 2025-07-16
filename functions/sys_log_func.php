@@ -39,7 +39,7 @@ class SysLogFunction
         }
     }
 
-    private function logToFile($message) {
+    public function logToFile($message) {
 
         $logDirectory = __DIR__ . '/../logs';
         $logFile = $logDirectory . '/log.txt';
@@ -52,11 +52,6 @@ class SysLogFunction
         // Append the message to the log file
         file_put_contents($logFile, $message, FILE_APPEND);
     }
-
-    // Example usage:
-    // logSystemEvent("User Login", "User with ID 123 logged in", 123);
-
-        // Register new user with validation
 }
 
 // Initialize SysLogFunction
