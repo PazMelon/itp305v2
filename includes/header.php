@@ -9,7 +9,9 @@
     <title><?php echo isset($pageTitle) ? $pageTitle : 'Auth System'; ?></title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
     <script src="assets/js/auth.js" defer></script>
 </head>
 
@@ -29,6 +31,7 @@
                         <a href="dashboard.php"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
                         <?php if (Auth::checkRole('admin')): ?>
                             <a href="admin.php"><i class="fas fa-cog"></i> Admin Panel</a>
+                            <a href="system-logs.php"><i class="fas fa-clipboard-list"></i> System Logs</a>
                         <?php endif; ?>
                         <a href="logout.php"><i class="fas fa-sign-out-alt"></i> Logout</a>
                     <?php else: ?>
@@ -39,4 +42,4 @@
             </div>
         </nav>
     </header>
-    <main class="container"></main>
+    <main class="container">
