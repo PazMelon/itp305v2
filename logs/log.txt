@@ -1,0 +1,12 @@
+[2025-07-15 08:23:48] ERROR: Table 'auth_system.sys_logs' doesn't exist
+[2025-07-15 08:42:13] ERROR: Table 'auth_system.sys_logs' doesn't exist
+[2025-07-15 08:44:32] System Event: System Login - Odemil Uyan has logged in (Created by: 2)
+[2025-07-15 08:48:37] System Event: System Logout -   has logged out. (Created by: 0)
+[2025-07-15 08:49:53] System Event: System Login - Odemil Uyan has logged in. (Created by: 2)
+[2025-07-15 08:49:54] System Event: System Logout - Odemil Uyan has logged out. (Created by: 2)
+[2025-07-15 08:54:20] System Event: New Registration - Virgil Cabactulan successfully registered! (Created by: 0)
+[2025-07-15 08:55:12] System Event: System Login - Virgil Cabactulan has logged in. (Created by: 7)
+[2025-07-15 08:56:18] System Event: System Logout - Virgil Cabactulan has logged out. (Created by: 7)
+[2025-07-16 03:05:38] System Event: System Login - Abel Penaso has logged in. (Created by: 3)
+[2025-07-16 03:06:35] System Event: System Logout - Abel Penaso has logged out. (Created by: 3)
+[2025-07-16 03:06:41] System Event: System Login - Odemil Uyan has logged in. (Created by: 2)
