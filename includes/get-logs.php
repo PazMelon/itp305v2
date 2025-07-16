@@ -5,9 +5,6 @@ Auth::requireAdmin();
 
 header('Content-Type: application/json');
 
-// Database connection
-$conn = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_NAME);
-
 if ($conn->connect_error) {
     die(json_encode(['error' => 'Database connection failed']));
 }
