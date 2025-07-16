@@ -11,7 +11,7 @@ $userId = isset($_GET['id']) ? intval($_GET['id']) : 0;
 // Check if trying to delete self
 if ($userId == $_SESSION['user_id']) {
     $_SESSION['error'] = "You cannot delete your own account";
-    header("Location: admin.php");
+    header("Location: /../admin.php");
     exit();
 }
 
@@ -24,7 +24,7 @@ $user = $result->fetch_assoc();
 
 if (!$user) {
     $_SESSION['error'] = "User not found";
-    header("Location: admin.php");
+    header("Location: /../admin.php");
     exit();
 }
 
@@ -50,6 +50,6 @@ if ($deleteStmt->execute()) {
     $syslog->logSystemEvent('User Deletion Failed', $description, $_SESSION['user_id']);
 }
 
-header("Location: admin.php");
+header("Location: /../admin.php");
 exit();
 ?>
