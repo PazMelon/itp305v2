@@ -40,8 +40,12 @@ $users = $conn->query("SELECT id, username, first_name, last_name, role, created
                             <td>
                                 <a href="edit-user.php?id=<?php echo $user['id']; ?>" class="btn btn-small">Edit</a>
                                 <?php if ($user['id'] != $_SESSION['user_id']): ?>
-                                    <a href="delete-user.php?id=<?php echo $user['id']; ?>"
-                                        class="btn btn-small btn-danger">Delete</a>
+                                    <a href="includes/delete-user.php?id=<?php echo $user['id']; ?>"
+                                       class="btn btn-small btn-danger"
+                                       data-user-id="<?php echo $user['id']; ?>"
+                                       data-user-name="<?php echo htmlspecialchars($user['first_name'] . ' ' . $user['last_name']); ?>">
+                                        Delete
+                                    </a>
                                 <?php endif; ?>
                             </td>
                         </tr>
@@ -56,5 +60,9 @@ $users = $conn->query("SELECT id, username, first_name, last_name, role, created
         </div>
     </div>
 </div>
+
+<!-- Include SweetAlert and our delete confirmation script -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="/assets/js/delete-confirm.js"></script>
 
 <?php require_once 'includes/footer.php'; ?>
