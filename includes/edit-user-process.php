@@ -18,7 +18,7 @@ $user = $result->fetch_assoc();
 // Check if user exists
 if (!$user) {
     $_SESSION['error'] = "User not found";
-    header("Location: admin.php");
+    header("Location: /../admin.php.php");
     exit();
 }
 
@@ -33,7 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $errors = [];
     if (empty($firstName)) $errors[] = "First name is required";
     if (empty($lastName)) $errors[] = "Last name is required";
-    if (!in_array($role, ['admin', 'editor', 'user'])) $errors[] = "Invalid role specified";
+    if (!in_array($role, ['admin', 'user'])) $errors[] = "Invalid role specified";
     
     if (empty($errors)) {
         // Build change description
